@@ -14,7 +14,6 @@
             color: aquamarine;
             background-color: black;
             font-family: sans-serif;
-            font-size: 200%
         }
 
         h2 {
@@ -25,16 +24,50 @@
         }
 
     </style>
+
+    <!--    If we want a specific paragraph to be a color, -->
+    <!--   We give it a class inside its brackets and call it-->
+    <!--   Using dot notation! -->
+    <!--    we will also show using id's with a # identifier-->
+    <!--   ID's should only be used once per page however.-->
+    <style type="text/css">
+        .blue {
+            color: blue
+        }
+
+        .large {
+            font-size: 300%;
+            color: white;
+            background-color: darkblue
+        }
+
+        .fancy {
+            font-family: monospace
+        }
+
+        #old {
+            font-size: 500%
+        }
+
+    </style>
 </head>
 
 <!--Here we are going to demonstrate inline CSS-->
 <!--We would add style in line with the p tags. -->
+<!--classes are used to show specificity. -->
+<!-- also, one entity can have multiple classes -->
+<!--span used to portion out a particular part of a paragraph tag!-->
 
 <body>
     <p>Just a test.</p>
     <h2>Here is an example of inline css. Check the source code.</h2>
     <p style="background-color: aqua; font-size: 100%; color: yellow">Here we are.</p>
 
+    <p class="blue"> Let's see if this prints in blue.</p>
+    <p class="large fancy"> Is this large enough for you?</p>
+    <p id="old"><span class="blue">This displays using an ID.</span></p>
+    <p></p>
+    <p></p>
 </body>
 
 </html>
