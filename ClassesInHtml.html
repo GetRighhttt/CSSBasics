@@ -9,15 +9,29 @@
     <title>More Advanced CSS!</title>
     <style type="text/css">
         /*opacity deals with transparency. */
+        /*absolute & fixed works as if the element is not there.*/
+        /*absolute takes the element out of the page.*/
+        /*fixed will not move; good for menus*/
+        /*sticky sticks to position of the page.*/
+        /*static default, also work with borders.*/
+        /*border-radius = 50% makes a circle.*/
         #first {
             color: coral;
-            font-family: monospace;
+            font-family: monospace, sans-serif, cursive;
+            font-style: oblique;
             font-size: 200%;
             background-color: antiquewhite;
-            opacity: 0.5;
+            opacity: 0.9;
+            position: sticky;
+            left: 10px;
+            border: 20px dotted;
+            border-color: blueviolet;
+            border-radius: 150px;
+            text-align: center;
         }
 
         /*Here is where we demonstrate relative positioning to where it was.*/
+        /*relative is relative to the top left of the page.*/
         /*z-index is good for overlapping elements. */
         .topic {
             font-family: serif;
@@ -31,6 +45,44 @@
             top: 20px;
             margin-bottom: 20px;
             z-index: 2;
+        }
+
+        /*This is how we use margins.*/
+        /*Can set top and bottom with first two*/
+        /*Can set left and right with bottom two.*/
+        /*It works clockwise.*/
+        /*font-weight used to set bold.*/
+        #newMargin {
+            color: black;
+            margin: 50px 10px 40px 40px;
+            width: 155px;
+            background-color: yellow;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            border-color: black;
+            border-style: groove;
+        }
+
+        /*Gets rid of white space in between elements.*/
+        /*Using a CSS reset means the page will be the same for every browser that you run your web page on!*/
+        p {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        div {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        a:hover {
+            /*styles when user is hovering over link.*/
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: gray;
         }
 
     </style>
@@ -49,6 +101,13 @@
         <p>Position One.</p>
         <p>This is interesting.</p>
         <p>I agree...</p>
+    </div>
+
+    <div id="newMargin">
+        <p>YOOOOOOOOOOO</p>
+        <p>BUUUDDDDYYYYYY</p>
+        <p>WE HEEEERRRREEEEE</p>
+        <p><a href="https://www.google.com" target="_blank">Google Link!</a></p>
     </div>
     <hr>
 </body>
