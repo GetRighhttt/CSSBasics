@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Here we are going to demonstrate how to position itmes-->
+<!--Positioning is a key aspect of HTML that we must work on-->
+<!--Floating is good but postioning is more precise! -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>More Advanced CSS!</title>
+    <style type="text/css">
+        /*opacity deals with transparency. */
+        #first {
+            color: coral;
+            font-family: monospace;
+            font-size: 200%;
+            background-color: antiquewhite;
+            opacity: 0.5;
+        }
+
+        /*Here is where we demonstrate relative positioning to where it was.*/
+        /*z-index is good for overlapping elements. */
+        .topic {
+            font-family: serif;
+            color: antiquewhite;
+            background-color: dimgrey;
+            font-size: 120%;
+            width: 100px;
+            position: relative;
+            right: 100px;
+            left: 100px;
+            top: 20px;
+            margin-bottom: 20px;
+            z-index: 2;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="first">
+        <p>Here I am! <b>Where aren't thou?</b></p>
+        <p>How old am I?<br>
+            <i>About 27!</i>
+        </p>
+        <p>What's your name? <ins>Stefan Bayne!</ins></p>
+    </div>
+    <div class="topic">
+        <p>Position One.</p>
+        <p>This is interesting.</p>
+        <p>I agree...</p>
+    </div>
+    <hr>
+</body>
+
+</html>
